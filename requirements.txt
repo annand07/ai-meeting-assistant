@@ -1,0 +1,43 @@
+# UI
+streamlit>=1.38.0
+
+# YouTube audio download
+yt-dlp>=2024.8.6
+
+# Audio processing
+pydub>=0.25.1
+ffmpeg-python>=0.2.0
+
+# Transcription (local Whisper)
+openai-whisper>=20231117
+torch>=2.2.0
+torchaudio>=2.2.0
+
+# Translation (Hindi -> English, if not using Whisper's built-in translate task)
+transformers>=4.44.0
+sentencepiece>=0.2.0
+
+# LangChain + Mistral (LCEL pipeline)
+langchain>=0.2.16
+langchain-core>=0.2.38
+langchain-community>=0.2.16
+langchain-mistralai>=0.1.13
+
+# RAG: vector store + embeddings
+chromadb>=0.5.5
+langchain-huggingface>=0.0.3
+sentence-transformers>=3.0.1
+
+# PDF/TXT export
+fpdf2>=2.7.9
+reportlab>=4.2.2
+
+# Env/config
+python-dotenv>=1.0.1
+
+# Utilities
+tiktoken>=0.7.0
+numpy>=1.26.4
+
+numba>=0.60.0
+llvmlite>=0.43.0

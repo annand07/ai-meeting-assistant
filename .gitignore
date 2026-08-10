@@ -1,0 +1,18 @@
+﻿# Virtual environment
+.venv/
+
+# Environment variables (contains secrets!)
+.env
+
+# Downloaded/generated audio files
+downloades/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Streamlit
+.streamlit/secrets.toml
+
+# ChromaDB local storage
+vector_db/
