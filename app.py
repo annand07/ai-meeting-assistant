@@ -2,11 +2,7 @@
 AI Video Assistant — Streamlit UI
 -----------------------------------
 Wraps the existing CLI pipeline (process_input -> transcribe -> summarize ->
-extract -> RAG chat) in a polished Streamlit interface.
-
-Run with:
-    streamlit run app.py
-"""
+extract -> RAG chat) in a polished Streamlit inter"""
 
 import time
 import traceback
@@ -188,6 +184,10 @@ with st.sidebar:
         source = st.text_input(
             "YouTube URL",
             placeholder="https://www.youtube.com/watch?v=...",
+        )
+        st.caption(
+            "⚠️ Note: YouTube URL downloads may be blocked on cloud hosting "
+            "due to IP restrictions. For best results, use file upload."
         )
     else:
         uploaded_file = st.file_uploader(
