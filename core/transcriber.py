@@ -95,8 +95,9 @@ def transcribe_chunk(chunk_path: str, language: str = "english") -> str:
     translate task converts it to English directly.
     """
     model = load_model()
-    task = "translate" if language.lower() == "hinglish" else "transcribe"
-    result = model.transcribe(chunk_path, task=task)
+    whisper_lang = "hi" if language.lower() == "hinglish" else "en"
+    task = "translate" if whisper_lang == "hi" else "transcribe"
+    result = model.transcribe(chunk_path, task=task, language=whisper_lang)
     return result["text"]
 
 
